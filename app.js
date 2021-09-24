@@ -6,7 +6,7 @@ const news=document.getElementById('news')
 function getShows(text){
 
     news.innerHTML="";
-    const url=` https://newsapi.org/v2/everything?q=${text}&sortBy=popularity&apiKey=020ccaae9b9d408691ae94ca404498d3`
+    const url=` https://gnews.io/api/v4/search?q=${text}&token=18f172d7b704367e2b819df7809b94b8`
     fetch(url).then((res)=>{
         return res.json();
     })
@@ -29,7 +29,7 @@ card.classList = 'card-body';
     const card1=  ` <div id="newssection"class="card mb-3" style="width: 100vw;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="${item.urlToImage}" class="img-fluid rounded-start" alt="...">
+        <img src="${item.image}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
