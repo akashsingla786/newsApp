@@ -1,0 +1,83 @@
+  
+
+html{
+    height: 100%;
+}
+body{
+
+    background-image: linear-gradient(lightcyan,black);
+    /* background-size: contain; */
+    background-attachment: fixed;
+    
+    /* background-repeat: no-repeat; */
+    
+}
+#container{
+    
+    width: 80vw;
+    margin: 40px auto;
+}
+#inp{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    /* width: 20%; */
+}
+h1{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px red;
+}
+button{
+    font-size: 20px;
+    margin-top: 10px;
+}
+#dinp{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+#inp:focus{
+    outline: none;
+}
+#news{
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+margin-top: 20px;
+
+}
+
+.card{
+    /* border: 2px solid black; */
+    margin-left: 20px;
+    text-align: center;
+    transition: 300ms;
+    width: 250px;
+    /* height: 200px; */
+    /* background-color: white   ; */
+}
+section{
+    width:70%;
+    border : 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+}
+
+
+
+.content{
+    float: right;
+    
+}
+#newssection{
+    box-shadow: 1px 1px 2px lightyellow;
+    transition: 1.2s;
+    background-image: linear-gradient(lightyellow,lightgrey);
+
+}
+#newssection:hover{
+    transform: scale(1.1);
+}
